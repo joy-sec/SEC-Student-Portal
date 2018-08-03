@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#edecec"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="University Portal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ScrollView android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay12"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none">
+
+        <RelativeLayout android:id="@+id/lay13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="multiTable"
+                        android:clickable="true"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView android:id="@+id/img1"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:background="#009688"
+                                android:scaleType="fitCenter"
+                                android:padding="10dp"
+                                android:src="@drawable/camera"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="3dp"/>
+
+                            <TextView android:id="@+id/tx1"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_below="@+id/img1"
+                                android:background="#ffffff"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="20dp"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:text="Sabbir Ahmed"
+                                android:textColor="#000000"
+                                android:paddingBottom="25dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lays31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="2dp"
+                            android:onClick="multiTable"
+                            android:clickable="true"
+                            android:layout_marginBottom="2dp"
+                            android:orientation="vertical">
+
+
+
+
+
+                            <TextView
+                                android:id="@+id/vvf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:scaleType="fitCenter"
+                                android:padding="10dp"
+                                android:textColor="#000"
+                                android:layout_marginBottom="1dp"
+                                android:text="i Have a Problem In Installing android studio does any one help me?i Have a Problem In Installing android studio does any one help me?"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="3dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#000"
+                                android:layout_height="1dp" />
+
+                            <TextView android:id="@+id/tx21"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/img1"
+                                android:background="#ffffff"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="15dp"
+
+                                android:padding="10dp"
+                                android:gravity="right|center"
+                                android:text="Total Answer (20)"
+                                android:textColor="#39393b"
+                                android:paddingBottom="25dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:background="#dcd6d6"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_gravity="center"
+                                android:textSize="15dp"
+                                android:gravity="left|center"
+                                android:textColorHighlight="#fff"
+                                android:textColorHint="#fff"
+                                android:textColor="#000000"
+                                android:layout_alignParentLeft="true"
+                                android:drawablePadding="10dp"
+                                android:background="@drawable/edit"
+                                android:id="@+id/memberName"
+                                android:hint=" Enter a name : "/>
+                            <Button
+                                android:layout_width="100dp"
+                                android:background="#33833c"
+                                android:layout_marginTop="10dp"
+                                android:text="Post"
+                                android:textColor="#fff"
+                                android:layout_gravity="right"
+                                android:layout_height="50dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView android:id="@+id/img21"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="#009688"
+                                android:scaleType="fitCenter"
+                                android:padding="10dp"
+
+                                android:src="@drawable/camera"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="3dp"/>
+
+
+                            <TextView android:id="@+id/txv1"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/img1"
+                                android:background="#ffffff"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="20dp"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:text="Sabbir Ahmed"
+                                android:textColor="#000000"
+                                android:paddingBottom="25dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lays31v"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="2dp"
+                            android:onClick="multiTable"
+                            android:clickable="true"
+                            android:layout_marginBottom="2dp"
+                            android:orientation="vertical">
+
+
+
+
+
+                            <TextView
+                                android:id="@+id/vv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:scaleType="fitCenter"
+                                android:padding="10dp"
+                                android:textColor="#000"
+                                android:layout_marginBottom="1dp"
+                                android:text="i Have a Problem In Installing android studio does any one help me?i Have a Problem In Installing android studio does any one help me?"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="3dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:background="#fff"
+                                android:src="@drawable/tik"
+                                android:layout_height="40dp" />
+                        </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

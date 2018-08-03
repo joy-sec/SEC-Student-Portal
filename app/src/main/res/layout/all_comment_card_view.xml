@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:id="@+id/lays1"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:elevation="2dp"
+	android:layout_marginBottom="2dp"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginTop="1dp"
+		android:background="@drawable/circle"
+		android:layout_height="wrap_content">
+
+
+   <ImageButton android:id="@+id/card_image"
+	android:layout_width="50dp"
+	android:layout_height="50dp"
+	android:background="@android:drawable/dialog_holo_light_frame"
+	android:scaleType="fitCenter"
+	android:padding="10dp"
+	android:src="@drawable/camera"
+	android:layout_marginRight="5dp"
+	android:layout_marginLeft="5dp"
+	android:layout_marginTop="3dp"/>
+
+
+	<Button android:id="@+id/card_name"
+	android:layout_width="match_parent"
+	android:layout_height="50dp"
+	android:layout_below="@+id/img1"
+	android:background="@android:color/transparent"
+	android:layout_marginRight="5dp"
+	android:layout_marginTop="3dp"
+	android:layout_marginLeft="5dp"
+	android:textSize="20dp"
+	android:padding="10dp"
+	android:gravity="left|center"
+	android:text="Sabbir Ahmed"
+	android:textColor="#000000"
+	android:paddingBottom="25dp"
+	android:textStyle="bold" />
+
+
+	</LinearLayout>
+	<LinearLayout
+	android:id="@+id/lays31v"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:elevation="2dp"
+	android:layout_marginBottom="2dp"
+	android:orientation="vertical">
+
+
+
+
+	<TextView
+	android:id="@+id/card_title"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#ffffff"
+	android:scaleType="fitCenter"
+	android:padding="10dp"
+	android:gravity="left|center"
+	android:textSize="15dp"
+	android:textColor="#000"
+	android:layout_marginBottom="1dp"
+	android:text="i Have a Problem In Installing android studio does any one help me?i Have a Problem In Installing android studio does any one help me?"
+	android:layout_marginRight="5dp"
+	android:layout_marginLeft="5dp"
+	android:layout_marginTop="3dp"/>
+	<LinearLayout
+	android:layout_width="match_parent"
+	android:orientation="horizontal"
+	android:layout_gravity="right"
+	android:gravity="right"
+	android:layout_marginRight="20dp"
+	android:layout_height="wrap_content">
+
+	<ImageButton
+		android:id="@+id/right"
+		android:layout_width="45dp"
+		android:padding="20dp"
+		android:layout_gravity="right"
+		android:foregroundGravity="right"
+		android:background="@drawable/tik"
+		android:layout_marginRight="10dp"
+		android:layout_height="45dp" />
+	<ImageButton
+		android:id="@+id/wrong"
+		android:layout_width="45dp"
+		android:padding="20dp"
+		android:background="@drawable/tik1"
+		android:layout_gravity="right"
+
+		android:layout_marginRight="20dp"
+		android:layout_height="45dp" />
+	</LinearLayout>
+	<LinearLayout
+	android:layout_marginTop="10dp"
+	android:gravity="center"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+
+	<Button
+		android:id="@+id/btn_edit"
+		android:layout_gravity="right"
+		android:textColor="#ffffff"
+		android:textSize="10sp"
+		android:background="@drawable/button_background"
+		android:text="Edit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<Button
+		android:textColor="#ffffff"
+		android:text="Delete"
+		android:textAllCaps="false"
+		android:gravity="center"
+		android:layout_marginLeft="8dp"
+		android:layout_gravity="center"
+		android:id="@+id/btn_delete"
+		android:background="@drawable/button_background"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+</LinearLayout>
+
+</LinearLayout>
+	</LinearLayout>

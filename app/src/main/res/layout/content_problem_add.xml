@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    android:orientation="vertical"
+    tools:context="com.Gone.Shop.ProblemAddActivity"
+    tools:showIn="@layout/activity_problem_add">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#7c101010"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:id="@+id/img_image"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:src="@drawable/camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_image_chooser"
+                        android:background="@drawable/button_background"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:text="Select Picture"
+                        android:textColor="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/btn_choose_location"
+                        android:background="@drawable/button_background"
+                        android:layout_marginTop="8dp"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:text="Select location"
+                        android:textColor="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:text="Book Name :"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edit_problem_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <TextView
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:text="Price :"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/price"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+
+            <TextView
+                android:layout_marginTop="19dp"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:text="Description :"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edit_description"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_marginRight="5dp"
+                    android:background="#ffffff"
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"></Spinner>
+                <Spinner
+                    android:background="#ffffff"
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"></Spinner>
+
+            </LinearLayout>
+
+            <Button
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:id="@+id/btn_submit"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:text=" Submit"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/button_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

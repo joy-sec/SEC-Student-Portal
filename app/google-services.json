@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "906125133661",
+    "firebase_url": "https://universityshop-aa62a.firebaseio.com",
+    "project_id": "universityshop-aa62a",
+    "storage_bucket": "universityshop-aa62a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906125133661:android:f6b952838d51ca5d",
+        "android_client_info": {
+          "package_name": "com.Gone.Shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906125133661-kgt68mf7pdpflkno9s2rp6foh6ceiph3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Gone.Shop",
+            "certificate_hash": "be0a38c6bbad96a133622313fa0039a8721689cc"
+          }
+        },
+        {
+          "client_id": "906125133661-8tde2n61o2cjm1aufffopklhhfjkis5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOIgdfzOBBfzALoNA2htY3OvviwHTuYYA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906125133661-8tde2n61o2cjm1aufffopklhhfjkis5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

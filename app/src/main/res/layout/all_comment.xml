@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="University Portal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+
+        android:layout_height="wrap_content">
+
+
+        <ImageButton android:id="@+id/post_writter_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:src="@drawable/camera"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"/>
+
+        <Button android:id="@+id/post_writter"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/img1"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"
+
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Sabbir Ahmed"
+            android:textColor="#ffffff"
+            android:paddingBottom="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lays31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:gravity="left|center"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="1dp"
+            android:text="i Have a Problem In Installing android studio does any one help me?i Have a Problem In Installing android studio does any one help me?"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"/>
+        <TextView android:id="@+id/post_total_comment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/img1"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+
+            android:padding="10dp"
+            android:gravity="right|center"
+            android:text="Total Answer ()"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/circle"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:gravity="left|center"
+            android:textColorHighlight="#fff"
+            android:textColorHint="#fff"
+            android:textColor="#000000"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="10dp"
+            android:background="@drawable/button"
+            android:id="@+id/comment"
+            android:hint=" Enter a name : "/>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="100dp"
+            android:background="#2f8299"
+            android:layout_marginTop="10dp"
+            android:text="Comment"
+            android:textColor="#ffffff"
+            android:layout_gravity="right"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <ScrollView android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay12"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none">
+
+        <RelativeLayout android:id="@+id/lay13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lays1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:background="#fff"
+                            android:layout_height="match_parent">
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycleView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </android.support.v7.widget.RecyclerView>
+
+
+                        </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

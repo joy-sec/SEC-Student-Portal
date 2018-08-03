@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Ask Question?"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:background="#d531b2c2"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:src="@drawable/forum"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_height="25dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="13dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:onClick="userStatus"
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="My Question"
+            android:layout_height="50dp" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:background="#d531b2c2"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:src="@drawable/profile"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_height="25dp" />
+            <TextView
+            android:layout_width="match_parent"
+            android:textSize="13dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textStyle="bold"
+
+            android:gravity="center"
+            android:text="Top Member "
+            android:layout_height="50dp" />
+        </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/circle"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+
+            android:gravity="left|center"
+            android:layout_margin="10dp"
+            android:textColorHighlight="#fff"
+            android:textColorHint="#0a0909"
+            android:textColor="#000000"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="10dp"
+            android:background="@drawable/myract"
+            android:id="@+id/edit_problem_title"
+            android:hint=" Ask Question?"/>
+        <Button
+            android:layout_width="70dp"
+            android:background="#ffffff"
+            android:layout_marginTop="5dp"
+            android:text="Post"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/btn_submit"
+            android:textColor="#000000"
+            android:layout_gravity="right"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay12"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none">
+
+        <RelativeLayout android:id="@+id/lay13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

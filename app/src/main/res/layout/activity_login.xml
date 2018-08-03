@@ -71,7 +71,7 @@
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="60dp">
-                <EditText
+                <custom_font.MyEditText
                     android:layout_width="wrap_content"
                     android:id="@+id/user"
                     android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
                     android:letterSpacing="0.1"/>
 
 
-                <EditText
+                <custom_font.MyEditText
                     android:layout_width="wrap_content"
                     android:id="@+id/pass"
                     android:layout_height="wrap_content"
